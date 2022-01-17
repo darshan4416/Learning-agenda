@@ -1,4 +1,4 @@
 # Learning-agenda
 
 
-Important topics to learn.
+Pre-requisite
