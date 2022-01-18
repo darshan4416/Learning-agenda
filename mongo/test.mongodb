@@ -1,0 +1,17 @@
+use('temp')
+
+db.users.insertMany([
+   {name:"manoj",age:30,year:3},
+   {name:"sneha",age:29,year:2},
+   {name:"deepak",age:28,year:4}
+])
+db.users.find().sort({"year":1})
+db.users.find().sort({"name":-1})
+
+db.users.update({krishna:"ram"},{$rename:{krishna:"name"}})
+db.users.replaceOne({name:"ram"},{name:"krishna"})
+db.users.find().count()
+
+db.users.updateOne{name:"krishna",{$set:{age:27,year:1}}})
+db.users.find().pretty()
+
