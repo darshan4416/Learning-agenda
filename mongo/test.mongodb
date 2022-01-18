@@ -22,3 +22,9 @@ db.users.createIndex({age:1})
 db.users.getIndexes()
 //db.users.find().pretty()
 
+resources:
+https://www.codewithharry.com/blogpost/mongodb-cheatsheet
+https://www.tutorialspoint.com/mongodb/mongodb_indexing.htm
+https://www.javatpoint.com/mongodb-sort
+https://youtu.be/Gazp4GpbcAM
+
