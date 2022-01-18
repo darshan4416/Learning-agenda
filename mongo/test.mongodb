@@ -13,5 +13,9 @@ db.users.replaceOne({name:"ram"},{name:"krishna"})
 db.users.find().count()
 
 db.users.updateOne{name:"krishna",{$set:{age:27,year:1}}})
-db.users.find().pretty()
+
+db.users.find({age:{$gt:20})
+
+db.user.find().limit(1)
+//db.users.find().pretty()
 
