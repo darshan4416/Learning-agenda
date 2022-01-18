@@ -16,6 +16,9 @@ db.users.updateOne{name:"krishna",{$set:{age:27,year:1}}})
 
 db.users.find({age:{$gt:20})
 
-db.user.find().limit(1)
+db.users.find().limit(1)
+db.users.find({age:{$lte:25}).explain("executionStats")
+db.users.createIndex({age:1})
+db.users.getIndexes()
 //db.users.find().pretty()
 
